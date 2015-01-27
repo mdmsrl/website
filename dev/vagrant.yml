@@ -1,0 +1,17 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - name: nginx to the latest version
+      apt: pkg=nginx state=latest update_cache=true
+      notify:
+        - start nginx
+    - name: nginx config
+      command: ln -sf /vagrant/dev/default /etc/nginx/sites-available/default
+      notify:
+        - reload nginx
+  handlers:
+    - name: start nginx
+      service: name=nginx state=started
+    - name: reload nginx
+      service: name=nginx state=reloaded
