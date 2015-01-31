@@ -424,3 +424,7 @@ nav {
 		margin-top: 0;
 	}
 }
+
+h3.uppercase {
+	text-transform: uppercase;
+}
