@@ -10,10 +10,10 @@
 	<title>MDM S.r.l. - Studio tecnico a Mantova - Machine Design</title>
 
 	<!-- Bootstrap core CSS -->
-	<link href="./css/bootstrap.css" rel="stylesheet">
+	<link href="/static/css/bootstrap.css" rel="stylesheet">
 
-	<link href="./css/style.css" rel="stylesheet">
-	<link href="./css/palette.css" rel="stylesheet">
+	<link href="/static/css/style.css" rel="stylesheet">
+	<link href="/static/css/palette.css" rel="stylesheet">
 	<style>
       #map-canvas {
         width: 100%;
@@ -69,7 +69,7 @@
 		</div>
 	</div>
 
-	<div class="image_area640 shadow" style="background-image: url(./images/1920x640.gif); margin-top: 0">
+	<div class="image_area640 shadow" style="background-image: url(http://lorempixel.com/1920/640/technics); margin-top: 0">
 	</div>
 
     <div class="container container_ptop container_pbottom" id="first-title">
@@ -94,7 +94,7 @@
 
 	</div> <!-- /container -->
 
-	<div class="image_area400 shadow" style="background-image: url(./images/1920x400.gif)">
+	<div class="image_area400 shadow" style="background-image: url(http://lorempixel.com/1920/400/technics)">
 	</div>
 
     <div class="container container_ptop container_pbottom">
@@ -122,7 +122,7 @@
 					<div class="row">
 						<div class="col-md-40 container_ptop container_pbottom content_box90">
 							<a href="javascript:reset('hidden1');">
-								<div style="background: url(./images/ic_close_black_48dp.png) no-repeat center center; background-size: 30px 30px; width:50px; height: 50px; position: absolute; top: 25px; right: 25px; display: none; z-index: 120" id="reset1"></div>
+								<div style="background: url(/static/images/ic_close_black_48dp.png) no-repeat center center; background-size: 30px 30px; width:50px; height: 50px; position: absolute; top: 25px; right: 25px; display: none; z-index: 120" id="reset1"></div>
 							</a>
 							<div class="row">
 								<div class="col-md-12">
@@ -151,7 +151,7 @@
 								<td>
 									<div class="content_box80" style="padding-top: 5px; padding-bottom: 5px">
 							<a href="javascript:reset('hidden1');">
-								<div style="background: url(./images/ic_close_black_48dp.png) no-repeat center center; background-size: 30px 30px; width:50px; height: 50px; position: absolute; top: 25px; right: 25px; display: none;" id="reset2"></div>
+								<div style="background: url(/static/images/ic_close_black_48dp.png) no-repeat center center; background-size: 30px 30px; width:50px; height: 50px; position: absolute; top: 25px; right: 25px; display: none;" id="reset2"></div>
 							</a>
 										<div id="hidden-block">
 											<div id="map-canvas" ></div>
@@ -171,7 +171,7 @@
 								<td>
 				<div class="action-button-h">
 					<div class="action-button-wrap">
-						<a href="javascript:showhidden('hidden1');"><div class="action-button shadow featured-btn2" style="background-image: url(./images/ic_map_black_48dp.png)"></div></a>
+						<a href="javascript:showhidden('hidden1');"><div class="action-button shadow featured-btn2" style="background-image: url(/static/images/ic_map_black_48dp.png)"></div></a>
 					</div>
 				</div>
 								</td>
@@ -184,11 +184,11 @@
 						<td>
 							<div class="row">
 								<div class="col-sm-6">
-									<img src="./images/BTN-person.png">
+									<img src="/static/images/BTN-person.png">
 									<p>Marco Baroni</p>
 								</div>
 								<div class="col-sm-6">
-									<img src="./images/BTN-person.png">
+									<img src="/static/images/BTN-person.png">
 								<p>Ing. Gianpietro Zanini</p>
 								</div>
 							</div>
@@ -201,7 +201,7 @@
 	</div> <!-- /container -->
 
 
-	<div class="image_area640 shadow" style="background-image: url(./images/pencil.jpg)">
+	<div class="image_area640 shadow" style="background-image: url(/static/images/pencil.jpg)">
 	</div>
 
 	<div class="indigo-row bg_indigo txt_white">
@@ -214,9 +214,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
-	<script src="./js/smoothscroll.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/script.js"></script>
+	<script src="/static/js/smoothscroll.js"></script>
 	<script>
 	$(window).resize(function(){
 		var stat = document.getElementById("featured-btn1").style.display;
@@ -257,7 +257,7 @@
         var marker = new google.maps.Marker({
       		position: new google.maps.LatLng(45.161619, 10.842318),
       		map: map,
-      		title: 'Hello World!'
+      		title: 'MDM S.r.l.'
   		});
       }
       google.maps.event.addDomListener(window, 'load', initialize);

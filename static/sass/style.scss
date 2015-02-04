@@ -1,8 +1,8 @@
 /* ---------- FONT ------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,400);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
 
-@font-face {
+/* @font-face {
     font-family: 'robotothin';
     src: url('../fonts/Roboto-Thin-webfont.eot');
     src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
@@ -23,7 +23,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -47,18 +47,19 @@ h2 {
 }
 h3 {
 	font-size: 1.25em;
-    font-family: 'robotoregular', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .txt_thin {
-    font-family: 'robotothin', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 .txt_regular {
-    font-family: 'robotoregular', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-default .navbar-nav > li > a {
-    font-family: 'robotoregular', sans-serif;
+    font-family: 'Roboto', sans-serif;
 	font-size: 1.2em;
 }
 @media (min-width: 768px) {
@@ -181,7 +182,7 @@ h3 {
 .featured-box1 {
 	position: static;
 	float: none;
-	width: 100%:
+	width: 100%;
 }
 
 .featured-btn {
@@ -371,7 +372,15 @@ img {
 
 #header {
 	height: 41.15vw;
-	background-image: url(../images/header_bg.png);
+	@media screen and (min-device-width: 1921px) {
+		background-image: url(../images/header_large_x2.png);
+	}
+	@media screen and (min-device-width: 961px) {
+		background-image: url(../images/header_large.png);
+	}
+	@media screen and (max-device-width: 960px) {
+		background-image: url(../images/header_medium.png);
+	}
 	background-repeat:no-repeat;
 	background-position: center center;
 	background-size: auto 100%;
@@ -379,6 +388,10 @@ img {
 .navbar-default {
 	background-color: transparent;
 	border: 0;
+	.navbar-toggle {
+		border-color: transparent;
+		float: left;
+	}
 }
 
 nav {
@@ -386,14 +399,11 @@ nav {
 	z-index: 1000;
 }
 
-.navbar-default .navbar-toggle {
-	border-color: transparent;
-}
 .navbar-nav > li {
 	border-radius: 5px;
 }
 .navbar-toggle {
-	float: left;
+	
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: transparent;

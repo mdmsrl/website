@@ -1,0 +1,88 @@
+/* ---------- Txt Color ------------- */
+/* line 2, ../sass/palette.scss */
+body {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* line 4, ../sass/palette.scss */
+.txt_white {
+  color: #FFFFFF !important;
+}
+
+/* line 5, ../sass/palette.scss */
+.txt_black54 {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* line 7, ../sass/palette.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #3F51B5;
+}
+
+@media (min-width: 768px) {
+  /* line 8, ../sass/palette.scss */
+  .navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+  }
+}
+/* line 11, ../sass/palette.scss */
+.navbar-default .navbar-nav > li:hover > a {
+  color: #FFFFFF;
+}
+
+/* ---------- BG Color ------------- */
+/* line 16, ../sass/palette.scss */
+body {
+  background-color: #FFFFFF;
+}
+
+/* line 17, ../sass/palette.scss */
+.bg_indigo {
+  background-color: #3F51B5 !important;
+}
+
+/* line 18, ../sass/palette.scss */
+.bg_gray {
+  background-color: #E8EAF6 !important;
+}
+
+/* line 20, ../sass/palette.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFFFFF;
+}
+
+/* line 22, ../sass/palette.scss */
+#navbar {
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  /* line 23, ../sass/palette.scss */
+  #navbar {
+    background-color: #3F51B5;
+  }
+}
+/* line 25, ../sass/palette.scss */
+.navbar-default .navbar-nav > li:hover {
+  background-color: #9FA8DA;
+}
+
+/* line 27, ../sass/palette.scss */
+.action-button {
+  background-color: #FF1744;
+}
+
+/* line 29, ../sass/palette.scss */
+.shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 31, ../sass/palette.scss */
+.action-button:hover {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* line 33, ../sass/palette.scss */
+.action-button:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+}
