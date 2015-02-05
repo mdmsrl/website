@@ -1,5 +1,6 @@
-/* ---------- FONT ------------- */
+@import 'respimg';
 
+/* ---------- FONT ------------- */
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
 
 /* @font-face {
@@ -29,7 +30,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 12pt;
-	-webkit-font-smoothing:antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 { 	margin: 0.25em 0 0.85em 0; line-height: 1; }
@@ -372,15 +373,7 @@ img {
 
 #header {
 	height: 41.15vw;
-	@media screen and (min-device-width: 1921px) {
-		background-image: url(../images/header_large_x2.png);
-	}
-	@media screen and (min-device-width: 961px) {
-		background-image: url(../images/header_large.png);
-	}
-	@media screen and (max-device-width: 960px) {
-		background-image: url(../images/header_medium.png);
-	}
+	@include responsive-background-image("../images/header", "png");
 	background-repeat:no-repeat;
 	background-position: center center;
 	background-size: auto 100%;
@@ -440,4 +433,10 @@ nav {
 
 h3.uppercase {
 	text-transform: uppercase;
+}
+
+// images
+#bigimage {
+	margin-top: 0;
+	@include responsive-background-image('bigimage', 'png');
 }
