@@ -54,6 +54,20 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.btn-person {
+	> p {
+		margin: 50px 0 50px 0;
+	}
+	> img {
+		width: 200px;
+	}
+	@media only screen and (max-width: 767px) {
+		&.first {
+			margin-top: 50px;
+		}
+	}
+}
+
 h1, h2, h3, h4, h5, h6 { 	margin: 0.25em 0 0.85em 0; line-height: 1; }
 
 @media (min-width: 768px) {
