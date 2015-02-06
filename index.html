@@ -14,55 +14,33 @@
 
 	<link href="/static/css/style.css" rel="stylesheet">
 	<link href="/static/css/palette.css" rel="stylesheet">
-	<style>
-      #map-canvas {
-        width: 100%;
-        height: 100%;
-        
-      }
-      #map-canvas img { 
-	max-width: none;
-	min-height: initial;
-	}
-
-      #map-canvas label { 
-	width: auto; display:inline; 
-	} 
-
-	#map-canvas * {
-		transition: initial;
-        -webkit-transition: initial;
-        -moz-transition: initial;
-        -o-transition: initial;
-	}
-    </style>
 </head>
 
 <body>
 	<div id="header" class="bg_indigo shadow">
-    <div class="container" id="nav-container">
-	<nav class="navbar navbar-default bg_indigo">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Prodotti</a></li>
-					<li><a href="#">Progettazione</a></li>
-					<li><a href="#">Altro</a></li>
-					<li><a href="#contacts">Contatti</a></li>
-				</ul>
-			</div><!--/.nav-collapse -->
-	</nav>
+		<div class="container" id="nav-container">
+			<nav class="navbar navbar-default bg_indigo">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="/prodotti/">Prodotti</a></li>
+						<li><a href="/progettazione/">Progettazione</a></li>
+						<li><a href="/altro/">Altro</a></li>
+						<li><a href="#contatti">Contatti</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</nav>
+		</div>
 	</div>
-    </div>
-	
+
 	<div class="action-button-h">
 		<div class="action-button-wrap">
 			<a href="#first-title" class="smoothScroll"><div class="action-button shadow" style="background-size: 30px 30px;"></div></a>
@@ -72,7 +50,7 @@
 	<div id="bigimage" class="image_area640 shadow">
 	</div>
 
-    <div class="container container_ptop container_pbottom" id="first-title">
+	<div class="container container_ptop container_pbottom" id="first-title">
 		<div class="sub_title">
 			<h2 class="centered txt_black54">Cosa facciamo</h2>
 		</div>
@@ -94,10 +72,10 @@
 
 	</div> <!-- /container -->
 
-	<div class="image_area400 shadow" style="background-image: url(http://lorempixel.com/1920/400/technics)">
+	<div class="image_area400 shadow" style="background-image: url(/static/images/desk.svg)">
 	</div>
 
-    <div class="container container_ptop container_pbottom">
+	<div class="container container_ptop container_pbottom">
 		<!-- Example row of columns -->
 		<div class="row">
 			<div class="col-md-6 content_box80">
@@ -114,7 +92,7 @@
 
 	</div> <!-- /container -->
 
-    <div class="container-fluid shadow" id="contacts">
+	<div class="container-fluid shadow" id="contatti">
 		<!-- Example row of columns -->
 		<div class="row featured">
 			<div class="col-md-40 txt_white featured-col featured-box1 bg_indigo" id="hidden1">
@@ -126,141 +104,141 @@
 							</a>
 							<div class="row">
 								<div class="col-md-12">
-								<h2>Contatti</h2>
+									<h2>Contatti</h2>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6 col-md-12 container_pbottom2">
 									<p><strong>MDM S.r.l.</strong>
-									<br />Via Don Giovanni Bosco 16
-									<br />Mottella
-									<br />46030 San Giorgio di Mantova (MN)
-									<br />ITALY
-									<br /><a style="color: #ff8a80;" href="mailto:info@machinedesignmn.com">info@machinedesignmn.com</a></p>
-								</div>
-								<div class="col-sm-6 col-md-12">
-									<p>Lo studio MDM &reg; nasce nel 2005 dalla collaborazione di due soci con grande passione ed esperienza nei settori riguardanti la meccanica in generale. Per alcune tipologie di macchine o di gruppi funzionali MDM &reg; può fornire il prototipo completo.</p>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="col-md-60 bg_indigo" style="padding-left:0; padding-right: 0">
-						<table class="center-table">
-							<tr>
-								<td>
-									<div class="content_box80" style="padding-top: 5px; padding-bottom: 5px">
-							<a href="javascript:reset('hidden1');">
-								<div style="background: url(/static/images/ic_close_black_48dp.png) no-repeat center center; background-size: 30px 30px; width:50px; height: 50px; position: absolute; top: 25px; right: 25px; display: none;" id="reset2"></div>
-							</a>
-										<div id="hidden-block">
-											<div id="map-canvas" ></div>
-										</div>
+										<br />Via Don Giovanni Bosco 16
+										<br />Mottella
+										<br />46030 San Giorgio di Mantova (MN)
+										<br />ITALY
+										<br /><a style="color: #ff8a80;" href="mailto:info@machinedesignmn.com">info@machinedesignmn.com</a></p>
 									</div>
-								</td>
-							</tr>
-						 </table>
+									<div class="col-sm-6 col-md-12">
+										<p>Lo studio MDM &reg; nasce nel 2005 dalla collaborazione di due soci con grande passione ed esperienza nei settori riguardanti la meccanica in generale. Per alcune tipologie di macchine o di gruppi funzionali MDM &reg; può fornire il prototipo completo.</p>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-md-60 bg_indigo" style="padding-left:0; padding-right: 0">
+								<table class="center-table">
+									<tr>
+										<td>
+											<div class="content_box80" style="padding-top: 5px; padding-bottom: 5px">
+												<a href="javascript:reset('hidden1');">
+													<div style="background: url(/static/images/ic_close_black_48dp.png) no-repeat center center; background-size: 30px 30px; width:50px; height: 50px; position: absolute; top: 25px; right: 25px; display: none;" id="reset2"></div>
+												</a>
+												<div id="hidden-block">
+													<div id="map-canvas" ></div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
+
+				<div class="col-md-btn featured-col featured-btn bg_indigo" id="featured-btn1">
+					<table class="center-table">
+						<tr>
+							<td>
+								<div class="action-button-h">
+									<div class="action-button-wrap">
+										<a href="javascript:showhidden('hidden1');"><div class="action-button shadow featured-btn2" style="background-image: url(/static/images/ic_map_black_48dp.png)"></div></a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-60 bg_gray featured-col featured-box2 container_ptop container_pbottom">
+					<table class="center-table">
+						<tr>
+							<td>
+								<div class="row">
+									<div class="col-sm-6">
+										<img src="/static/images/BTN-person.png">
+										<p>Marco Baroni</p>
+									</div>
+									<div class="col-sm-6">
+										<img src="/static/images/BTN-person.png">
+										<p>Ing. Gianpietro Zanini</p>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 
-			<div class="col-md-btn featured-col featured-btn bg_indigo" id="featured-btn1">
-						 <table class="center-table">
-							<tr>
-								<td>
-				<div class="action-button-h">
-					<div class="action-button-wrap">
-						<a href="javascript:showhidden('hidden1');"><div class="action-button shadow featured-btn2" style="background-image: url(/static/images/ic_map_black_48dp.png)"></div></a>
-					</div>
-				</div>
-								</td>
-							</tr>
-						 </table>
-			</div>
-			<div class="col-md-60 bg_gray featured-col featured-box2 container_ptop container_pbottom">
-				<table class="center-table">
-					<tr>
-						<td>
-							<div class="row">
-								<div class="col-sm-6">
-									<img src="/static/images/BTN-person.png">
-									<p>Marco Baroni</p>
-								</div>
-								<div class="col-sm-6">
-									<img src="/static/images/BTN-person.png">
-								<p>Ing. Gianpietro Zanini</p>
-								</div>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</div>
+		</div> <!-- /container -->
+
+
+		<div class="image_area640 shadow" style="background-image: url(/static/images/pencil.jpg)">
 		</div>
 
-	</div> <!-- /container -->
+		<div class="indigo-row bg_indigo txt_white">
+			<div class="container">
+				<p class="centered">Copyright &copy; 2015 - MDM S.r.l., P. IVA: 02109360202, R.E.A.: 224678</p>
+			</div> <!-- /container -->
+		</div>
 
-
-	<div class="image_area640 shadow" style="background-image: url(/static/images/pencil.jpg)">
-	</div>
-
-	<div class="indigo-row bg_indigo txt_white">
-		<div class="container">
-			<p class="centered">Copyright &copy; 2015 - MDM S.r.l., P. IVA: 02109360202, R.E.A.: 224678</p>
-		</div> <!-- /container -->
-	</div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/script.js"></script>
-	<script src="/static/js/smoothscroll.js"></script>
-	<script>
-	$(window).resize(function(){
-		var stat = document.getElementById("featured-btn1").style.display;
-		var winWidth = window.innerWidth;
-		if(stat == "none") { 
-			if(winWidth > 992) {
-				document.getElementById("hidden1").style.position = "absolute";
-				document.getElementById("hidden1").style.width = "100%";
-				document.getElementById("reset1").style.display = "none";
-				document.getElementById("reset2").style.display = "block";
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="/static/js/script.js"></script>
+		<script src="/static/js/smoothscroll.js"></script>
+		<script>
+		$(window).resize(function(){
+			var stat = document.getElementById("featured-btn1").style.display;
+			var winWidth = window.innerWidth;
+			if(stat == "none") {
+				if(winWidth > 992) {
+					document.getElementById("hidden1").style.position = "absolute";
+					document.getElementById("hidden1").style.width = "100%";
+					document.getElementById("reset1").style.display = "none";
+					document.getElementById("reset2").style.display = "block";
+				}
+				if(winWidth < 992) {
+					document.getElementById("hidden1").style.position = "static";
+					document.getElementById("reset1").style.display = "block";
+					document.getElementById("reset2").style.display = "none";
+				}
+			} else {
+				if(winWidth > 992) {
+					document.getElementById("hidden1").style.position = "static";
+					document.getElementById("hidden1").style.width = "calc(40% - 50px)";
+				}
+				if(winWidth < 992) {
+					document.getElementById("hidden1").style.position = "static";
+					document.getElementById("hidden1").style.width = "100%";
+				}
 			}
-			if(winWidth < 992) {
-				document.getElementById("hidden1").style.position = "static";
-				document.getElementById("reset1").style.display = "block";
-				document.getElementById("reset2").style.display = "none";
+		});
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		function initialize() {
+			var mapCanvas = document.getElementById('map-canvas');
+			var mapOptions = {
+				center: new google.maps.LatLng(45.161619, 10.842318),
+				zoom: 13,
 			}
-		} else {
-			if(winWidth > 992) {
-				document.getElementById("hidden1").style.position = "static";
-				document.getElementById("hidden1").style.width = "calc(40% - 50px)";
-			}
-			if(winWidth < 992) {
-				document.getElementById("hidden1").style.position = "static";
-				document.getElementById("hidden1").style.width = "100%";
-			}
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(45.161619, 10.842318),
+				map: map,
+				title: 'MDM S.r.l.'
+			});
 		}
-	});
-	</script>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(45.161619, 10.842318),
-          zoom: 13,
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({
-      		position: new google.maps.LatLng(45.161619, 10.842318),
-      		map: map,
-      		title: 'MDM S.r.l.'
-  		});
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 	</body>
-</html>
+	</html>

@@ -26,6 +26,27 @@
 
 } */
 
+#map-canvas {
+	width: 100%;
+	height: 100%;
+
+}
+#map-canvas img {
+	max-width: none;
+	min-height: initial;
+}
+
+#map-canvas label {
+	width: auto; display:inline;
+}
+
+#map-canvas * {
+	transition: initial;
+	-webkit-transition: initial;
+	-moz-transition: initial;
+	-o-transition: initial;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -262,10 +283,10 @@ li {
 
 .image_area400 {
 	margin-top: 3.125vw;
-	height: 20.83333vw;
+	height: 35vw;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: auto 100%;
+	background-size: 100%;
 	min-height: 250px;
 }
 
@@ -353,7 +374,7 @@ img {
 .action-button-h {
 	height: 40px;
 	}
-	
+
 .action-button-wrap {
 	width: 50px;
 	margin: 0 auto;
@@ -368,7 +389,7 @@ img {
 	background: url(../images/ic_arrow_drop_down_black_48dp.png) no-repeat center center;
 	background-size: 24px 24px;
 	}
-	
+
 /* ---------- HEADER ------------- */
 
 #header {
@@ -396,7 +417,7 @@ nav {
 	border-radius: 5px;
 }
 .navbar-toggle {
-	
+
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: transparent;
