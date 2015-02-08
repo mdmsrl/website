@@ -408,7 +408,7 @@ img {
 
 #header {
 	height: 41.15vw;
-	@include responsive-background-image("../images/header", "png");
+	@include responsive-background-image("../images/m/header", "png", $xlarge: true);
 	background-repeat:no-repeat;
 	background-position: center center;
 	background-size: auto 100%;
