@@ -24,6 +24,11 @@
 //     font-style: normal;
 //
 // }
+.case-description {
+  background-color: #C5CAE9;
+  font-size: 1.25em;
+  padding: 20px;
+}
 
 .bg_indigo a.contacts {
   color: #ff8a80;
@@ -840,7 +845,7 @@ li.logo {
   }
 }
 .featured-dev-bodyOpen {
-  height: 100vw;
+  height: initial;
 }
 .featured-dev-button {
   height: 48px;
@@ -874,7 +879,7 @@ li.logo {
     height: 25vw;
   }
   .featured-dev-bodyOpen {
-    height: 25vw;
+    height: initial;
   }
 }
 
