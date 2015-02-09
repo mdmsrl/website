@@ -28,6 +28,9 @@
   background-color: #C5CAE9;
   font-size: 1.25em;
   padding: 20px;
+  @media only screen and (max-width: 767px) {
+    font-size: 1.125em;
+  }
 }
 
 .bg_indigo a.contacts {
@@ -818,8 +821,11 @@ li.logo {
   padding-left: 0px;
   text-align: center;
 }
-.featured-dev-head h2{
+.featured-dev-head > h2 {
   margin: 0 !important;
+  @media only screen and (max-width: 767px) {
+    font-size: 1.75em;
+  }
 }
 
 .featured-dev-body {
@@ -832,11 +838,14 @@ li.logo {
   height: 50vw;
   padding: 0;
 }
-.featured-dev-img h3 {
+.featured-dev-img > h3 {
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
+  @media only screen and (max-width: 767px) {
+    font-size: 0.87em;
+  }
 }
 @media (min-width: 768px) {
   .featured-dev-img h3 {
