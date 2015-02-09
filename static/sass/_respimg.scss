@@ -1,38 +1,47 @@
 @mixin responsive-background-image($basename, $ext, $small: true, $medium: true, $xlarge: false) {
+	background-repeat:no-repeat;
 	// defaults to large
 	background-image: url($basename + "_large." + $ext);
+	background-size: image-width($basename + "_large." + $ext) image-height($basename + "_large." + $ext);
 	// large 2x
 	@media print, only screen and (-webkit-min-device-pixel-ratio: 15),screen and (min-resolution: 144dpi),screen and (min-resolution: 144dppx) {
 		background-image: url($basename + "_large_2x." + $ext);
+		background-size: image-width($basename + "_large_2x." + $ext)/2 image-height($basename + "_large_2x." + $ext)/2;
 	}
 	@if $xlarge {
 		// xlarge
 		@media only screen and (min-width: 1442px) {
 			background-image: url($basename + "_xlarge." + $ext);
+			background-size: image-width($basename + "_xlarge." + $ext) image-height($basename + "_xlarge." + $ext);
 		}
 		// xlarge 2x
 		@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 15),only screen and (min-width: 1442px) and (min-resolution: 144dpi),only screen and (min-width: 1442px) and (min-resolution: 144dppx) {
 			background-image: url($basename + "_xlarge_2x." + $ext);
+			background-size: image-width($basename + "_xlarge_2x." + $ext)/2 image-height($basename + "_xlarge_2x." + $ext)/2;
 		}
 	}
 	@if $medium {
 		// medium
 		@media only screen and (max-width: 1024px) {
 			background-image: url($basename + "_medium." + $ext);
+			background-size: image-width($basename + "_medium." + $ext) image-height($basename + "_medium." + $ext);
 		}
 		// medium 2x
 		@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 15),only screen and (max-width: 1024px) and (min-resolution: 144dpi),only screen and (max-width: 1024px) and (min-resolution: 144dppx) {
 			background-image: url($basename + "_medium_2x." + $ext);
+			background-size: image-width($basename + "_medium_2x." + $ext)/2 image-height($basename + "_medium_2x." + $ext)/2;
 		}
 	}
 	@if $small {
 		// small
 		@media only screen and (max-width: 735px) and (max-device-width: 768px) {
 			background-image: url($basename + "_small." + $ext);
+			background-size: image-width($basename + "_small." + $ext) image-height($basename + "_small." + $ext);
 		}
 		// small 2x
 		@media only screen and (max-width: 735px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 15), only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dpi), only screen and (max-width: 735px) and (max-device-width: 768px) and (min-resolution: 144dppx) {
 			background-image: url($basename + "_small_2x." + $ext);
+			background-size: image-width($basename + "_small_2x." + $ext)/2 image-height($basename + "_small_2x." + $ext)/2;
 		}
 	}
 }
