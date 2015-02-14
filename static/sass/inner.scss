@@ -1,4 +1,5 @@
 /* ---------- FONT ------------- */
+@import 'respimg';
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
 
@@ -24,6 +25,21 @@
 //     font-style: normal;
 //
 // }
+
+.featured-dev-img {
+  &#filling_valves-step1 {
+    @include responsive-background-image('../images/m/prog/filling_valves/step1', 'jpg', $setsize: false);
+  }
+  &#filling_valves-step2 {
+    @include responsive-background-image('../images/m/prog/filling_valves/step2', 'jpg', $setsize: false);
+  }
+  &#filling_valves-step3 {
+    @include responsive-background-image('../images/m/prog/filling_valves/step3', 'jpg', $setsize: false);
+  }
+  &#filling_valves-step4 {
+    @include responsive-background-image('../images/m/prog/filling_valves/step4', 'jpg', $setsize: false);
+  }
+}
 
 .uppercase {
   text-transform: uppercase;
