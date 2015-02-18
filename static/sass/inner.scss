@@ -3,42 +3,49 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
 
-// @font-face {
-//     font-family: 'robotothin';
-//     src: url('../fonts/Roboto-Thin-webfont.eot');
-//     src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
-//          url('../fonts/Roboto-Thin-webfont.woff') format('woff'),
-//          url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'),
-//          url('../fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-//
-// @font-face {
-//     font-family: 'robotoregular';
-//     src: url('../fonts/Roboto-Regular-webfont.eot');
-//     src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-//          url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
-//          url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-//          url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-//     font-weight: normal;
-//     font-style: normal;
-//
-// }
+@mixin product-image-block($name) {
+  ##{$name} {
+    > .big-box {
+      @include responsive-background-image('../images/m/prod/#{$name}/big', 'jpg');
+    }
+    > .top-box {
+      @include responsive-background-image('../images/m/prod/#{$name}/smalltop', 'jpg');
+    }
+    > .bottom-box {
+      @include responsive-background-image('../images/m/prod/#{$name}/smallbtm', 'jpg');
+    }
+  }
+}
+
+@mixin dev-image-block($name) {
+  &##{$name}-step1 {
+    @include responsive-background-image('../images/m/prog/#{$name}/step1', 'jpg');
+  }
+  &##{$name}-step2 {
+    @include responsive-background-image('../images/m/prog/#{$name}/step2', 'jpg');
+  }
+  &##{$name}-step3 {
+    @include responsive-background-image('../images/m/prog/#{$name}/step3', 'jpg');
+  }
+  &##{$name}-step4 {
+    @include responsive-background-image('../images/m/prog/#{$name}/step4', 'jpg');
+  }
+}
 
 .featured-dev-img {
-  &#filling_valves-step1 {
-    @include responsive-background-image('../images/m/prog/filling_valves/step1', 'jpg', $setsize: false);
-  }
-  &#filling_valves-step2 {
-    @include responsive-background-image('../images/m/prog/filling_valves/step2', 'jpg', $setsize: false);
-  }
-  &#filling_valves-step3 {
-    @include responsive-background-image('../images/m/prog/filling_valves/step3', 'jpg', $setsize: false);
-  }
-  &#filling_valves-step4 {
-    @include responsive-background-image('../images/m/prog/filling_valves/step4', 'jpg', $setsize: false);
-  }
+  @include dev-image-block('filling_valves');
+  @include dev-image-block('vasca');
+  @include dev-image-block('stirling');
+  @include dev-image-block('sensore');
+}
+
+.row {
+  @include product-image-block('trype');
+  @include product-image-block('hopper');
+  @include product-image-block('bikerack');
+  @include product-image-block('bordix');
+  @include product-image-block('filling_valves');
+  @include product-image-block('stirling');
 }
 
 .uppercase {
