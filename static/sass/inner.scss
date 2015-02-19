@@ -50,9 +50,10 @@
 }
 
 .table-patents {
-  @extend .uppercase;
   font-size: .85em;
+  cursor: default;
   thead {
+    @extend .uppercase;
     @include user-select(none);
     th {
       font-weight: 500;
@@ -63,7 +64,35 @@
       > i {
         @include user-select(none);
       }
-      cursor: default;
+      transition: background .5s, color .5s;
+      &:hover {
+        background-color: #3F51B5;
+        color: white;
+      }
+      &.empty {
+        &:hover {
+          background-color: inherit;
+        }
+      }
+    }
+  }
+}
+
+.table-case-studies {
+  font-size: .85em;
+  cursor: default;
+  thead {
+    @extend .uppercase;
+    @include user-select(none);
+    th {
+      font-weight: 500;
+    }
+  }
+  tbody {
+    tr {
+      > i {
+        @include user-select(none);
+      }
       transition: background .5s, color .5s;
       &:hover {
         background-color: #3F51B5;
@@ -955,18 +984,6 @@ li.logo {
   margin-bottom: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-#table table {
-  width: 100%;
-}
-#table table tr td, #table table tr th{
-  width: 33.33333333%;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-#table table tr th{
-  text-transform: uppercase;
 }
 
 #table2 {
