@@ -107,6 +107,20 @@
   }
 }
 
+#altro-section {
+  text-align: center;
+  margin-bottom: 100px;
+  width: 100%;
+  #altro-image {
+    margin: 0 auto 0 auto;
+    background-color: green;
+    background-size: 500px 500px;
+    width: 80vw;
+    height: 80vw;
+    margin-bottom: 20px;
+  }
+}
+
 .uppercase {
   text-transform: uppercase;
 }
