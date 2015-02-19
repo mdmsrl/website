@@ -111,12 +111,24 @@
   text-align: center;
   margin-bottom: 100px;
   width: 100%;
+  padding: 20px;
   #altro-image {
     margin: 0 auto 0 auto;
     background-color: green;
-    background-size: 500px 500px;
     width: 80vw;
     height: 80vw;
+    @media only screen and (min-width: 768px) {
+      width: 70vw;
+      height: 70vw;
+    }
+    @media only screen and (min-width: 992px) {
+      width: 70vw;
+      height: 70vw;
+    }
+    @media only screen and (min-width: 1200px) {
+      width: 40vw;
+      height: 40vw;
+    }
     margin-bottom: 20px;
   }
 }
