@@ -114,20 +114,21 @@
   padding: 20px;
   #altro-image {
     margin: 0 auto 0 auto;
-    background-color: green;
+    @include responsive-background-image('../images/m/altro/furgone/furgone', 'jpg');
+    background-size: 100%;
     width: 80vw;
-    height: 80vw;
+    height: 59.76654vw;
     @media only screen and (min-width: 768px) {
       width: 70vw;
-      height: 70vw;
+      height: 52.29572vw;
     }
     @media only screen and (min-width: 992px) {
       width: 70vw;
-      height: 70vw;
+      height: 52.29572vw;
     }
     @media only screen and (min-width: 1200px) {
       width: 40vw;
-      height: 40vw;
+      height: 29.88327vw;
     }
     margin-bottom: 20px;
   }
