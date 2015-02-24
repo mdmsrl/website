@@ -32,6 +32,12 @@
 	@include responsive-background-image('../images/m/homepage/bigimg/image1', 'jpg', $xlarge: true);
 }
 
+.nolinks {
+	:link {
+		color: inherit;
+	}
+}
+
 
 #map-canvas {
 	width: 100%;

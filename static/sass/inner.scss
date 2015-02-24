@@ -138,6 +138,12 @@
   text-transform: uppercase;
 }
 
+.nolinks {
+  :link {
+    color: inherit;
+  }
+}
+
 .case-description {
   background-color: #C5CAE9;
   font-size: 1.25em;
