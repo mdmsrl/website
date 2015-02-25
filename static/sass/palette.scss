@@ -1,0 +1,71 @@
+/* ---------- Txt Color ------------- */
+body { color: rgba(0,0,0, 0.87); }
+
+.txt_white { color: #FFFFFF !important; }
+.txt_black54 { color: rgba(0,0,0, 0.54); }
+
+.navbar-default .navbar-nav > li > a { color: #3F51B5; }
+@media (min-width: 768px) { .navbar-default .navbar-nav > li > a { color: #FFFFFF; } }
+
+
+.navbar-default .navbar-nav > li:hover > a { color: #FFFFFF; }
+
+.new-feature a:link { color: #FF8A80; }
+
+.red-link { color: #FF5252 !important; }
+.red-link:visited { color: #303F9F !important; }
+.red-link:hover { color: #D50000 !important; }
+
+#new-header h1 {
+	color: #444;
+	}
+#new-header p {
+	color: #212121;
+	}
+.featured-dev-img h3 {
+	color: #000000;
+	}
+
+/* ---------- BG Color ------------- */
+
+body { background-color: #FFFFFF; }
+.bg_indigo { background-color: #3F51B5 !important; }
+.bg_indigo100 { background-color: #E8EAF6 !important; }
+.bg_indigo200 { background-color: #9fA8DA !important; }
+.bg_gray { background-color: #E8EAF6 !important; }
+
+.navbar-default .navbar-toggle .icon-bar { background-color: #FFFFFF; }
+
+#navbar { background-color: #E8EAF6;}
+@media (min-width: 768px) { #navbar { background-color: #3F51B5; } }
+
+.navbar-default .navbar-nav > li.logo:hover  { background-color: #3F51B5; }
+
+.navbar-default .navbar-nav > li:hover  { background-color: #9FA8DA; }
+@media (min-width: 768px) { .navbar-default .navbar-nav > li:hover  { background-color: #9FA8DA; } }
+
+.action-button { background-color: #FF1744; }
+
+.shadow { box-shadow: 0px 2px 4px rgba(0,0,0, 0.5);}
+
+.action-button, .featured-dev-button {  box-shadow: 0px 2px 6px rgba(0,0,0, 0.5); }
+
+.action-button:hover, .new-featured-button:hover, .featured-dev-button:hover {  box-shadow: 2px 4px 10px rgba(0,0,0, 0.5); }
+
+.new-featured-button { 
+	background-color:  #FF1744;
+ }
+  
+.orange-button {
+	background-color: #FF9100;
+	}
+.featured-dev-img h3 {
+	background-color: #E8EAF6 ;
+	}
+.featured-dev-button {
+	background-color: #FF1744;
+	}
+	
+.featured-dev-img {
+	border: 1px solid #999; /* change this for image border */
+	}
