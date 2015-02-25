@@ -29,7 +29,13 @@
 // images
 #bigimage {
 	margin-top: 0;
-	@include responsive-background-image('../images/m/homepage/bigimg/image1', 'jpg', $xlarge: true);
+	@include responsive-background-image('../images/m/homepage/bigimg/image2', 'jpg', $xlarge: true);
+}
+
+.nolinks {
+	:link {
+		color: inherit;
+	}
 }
 
 
@@ -415,6 +421,7 @@ img {
 
 #header {
 	height: 41.15vw;
+	background-color: #3F51B5;
 	@include responsive-background-image("../images/m/homepage/header/header", "png", $xlarge: true);
 	background-position: center center;
 	background-size: auto 100%;

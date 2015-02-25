@@ -138,6 +138,12 @@
   text-transform: uppercase;
 }
 
+.nolinks {
+  :link {
+    color: inherit;
+  }
+}
+
 .case-description {
   background-color: #C5CAE9;
   font-size: 1.25em;
@@ -421,6 +427,9 @@ h3 {
   font-family: 'Roboto';
   color: rgba(0,0,0,0.54);
 }
+.new-featured {
+  background-color: #3F51B5;
+}
 .new-featured h2 {
   margin: 0;
   font-size: 30px;
@@ -610,13 +619,13 @@ h3 {
 
   .opened .right {
     width: 0;
-    height: 25.974026vw;
+    min-height: 25.974026vw;
   }
 }
 @media (min-width: 1200px) {
   .opened .left {
     width: 100%;
-    height: 25.974026vw;
+    min-height: 25.974026vw;
   }
 
   .opened .right {
@@ -802,6 +811,8 @@ img {
 }
 
 #new-header {
+  margin: 20px auto 0 auto;
+  width: 80%;
   height: 120px;
 }
 @media (min-width: 992px) {
