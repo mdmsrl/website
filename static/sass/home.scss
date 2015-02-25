@@ -29,7 +29,7 @@
 // images
 #bigimage {
 	margin-top: 0;
-	@include responsive-background-image('../images/m/homepage/bigimg/image1', 'jpg', $xlarge: true);
+	@include responsive-background-image('../images/m/homepage/bigimg/image2', 'jpg', $xlarge: true);
 }
 
 .nolinks {
