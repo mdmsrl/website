@@ -1,4 +1,5 @@
 @import 'respimg';
+@import "compass/css3/user-interface";
 
 /* ---------- FONT ------------- */
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
@@ -73,6 +74,20 @@ body {
 	}
 	> img {
 		width: 200px;
+	}
+	> .avatar-img {
+		width: 200px;
+		height: 200px;
+		background-size: 100%;
+		margin: 0 auto 0 auto;
+		@include user-select(none);
+		cursor: default;
+		&.gianpietro {
+			background-image: url(/static/images/avatar-gianpietro.png);
+		}
+		&.marco {
+			background-image: url(/static/images/avatar-marco.png);
+		}
 	}
 	@media only screen and (max-width: 767px) {
 		&.first {
