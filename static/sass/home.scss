@@ -33,6 +33,10 @@
 	@include responsive-background-image('../images/m/homepage/bigimg/image2', 'jpg', $xlarge: true);
 }
 
+#bigimage_en {
+	@include responsive-background-image('../images/m/homepage/bigimg/image2_en', 'jpg', $xlarge: true);
+}
+
 .nolinks {
 	:link {
 		color: inherit;
