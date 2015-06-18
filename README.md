@@ -1,11 +1,10 @@
 # MDM Webapp
 This repository contains the code for the development and the deplyoment of MDM S.r.l.'s website.
 
-## Development: Vagrant
-Type: `vagrant up` to boot the virtual machine containing the runtime environment. For more info about Vagrant usage please refer to the [offical docs](https://www.vagrantup.com/).
-The virtual machine is provisioned with _ansible_ so make sure you have it before issuing the command above.
+## Development: Python SimpleHTTPServer
+Type: `python2 -m SimpleHTTPServer` to start the static files web server.
 
-The website will be accessible at  [http://localhost:8080](http://localhost:8080).
+The website will be accessible at  [http://localhost:8000](http://localhost:8000).
 
-## Deploy: GitHub pages
-Ehm... what about `git push`? ;-)
+## Deploy: Amazon AWS S3
+Take a look inside the `scripts` directory!
