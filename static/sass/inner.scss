@@ -35,9 +35,10 @@
 
 .featured-dev-img {
   @include dev-image-block('filling_valves');
-  @include dev-image-block('vasca');
-  @include dev-image-block('stirling');
   @include dev-image-block('sensore');
+  @include dev-image-block('botunscr');
+  @include dev-image-block('neckhandling');
+  @include dev-image-block('rotfeed');
 }
 
 .row {
