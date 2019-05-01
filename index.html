@@ -269,14 +269,15 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEGWg-R60_m6EXgeoFf3CUox3_6P_b6-4"></script>
 <script>
 function initialize() {
+	var coords = [45.165226, 10.835844]
 	var mapCanvas = document.getElementById('map-canvas');
 	var mapOptions = {
-		center: new google.maps.LatLng(45.161619, 10.842318),
+		center: new google.maps.LatLng(coords[0], coords[1]),
 		zoom: 13,
 	}
 	var map = new google.maps.Map(mapCanvas, mapOptions);
 	var marker = new google.maps.Marker({
-		position: new google.maps.LatLng(45.161619, 10.842318),
+		position: new google.maps.LatLng(coords[0], coords[1]),
 		map: map,
 		title: 'MDM S.r.l.'
 	});
